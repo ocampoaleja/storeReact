@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux'
+
+import {buy_pokemon_action, return_pokemon_action} from '../redux/actions/gameShopAction'
 
 class CompraPokemon extends Component{
     render(){
@@ -11,4 +14,10 @@ class CompraPokemon extends Component{
     }
 }
 
-export default CompraPokemon;
+const mapDispatchToProps={
+    buy_pokemon_action,
+    return_pokemon_action
+
+};
+
+export default connect(null, mapDispatchToProps)(CompraPokemon);
