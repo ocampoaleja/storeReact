@@ -9,7 +9,7 @@ const game_shop = (state=default_game_shop,action) => {
         case BUY_POKEMON:{
             return{
                 ...state,
-                pokemon:state.payload - action.payload
+                pokemon:state.pokemon - action.payload
             }
         }
         case RETURN_POKEMON:{

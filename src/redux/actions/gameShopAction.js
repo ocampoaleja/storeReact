@@ -10,7 +10,7 @@ export const buy_pokemon_action =(cant) => {
 
 export const return_pokemon_action =(cant) => {
     return{
-        type:BUY_POKEMON,
+        type:RETURN_POKEMON,
         payload: cant
     }
 }

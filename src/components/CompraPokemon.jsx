@@ -7,8 +7,11 @@ class CompraPokemon extends Component{
     render(){
         return(
             <div>
-                <button className="btn btn-dark btn-sm mb-2">Comprar Pokemon</button>
-                <button className="btn btn-dark btn-sm">Regresar Pokemon</button>
+                <button className="btn btn-dark btn-sm mb-2" onClick={()=>{this.props.buy_pokemon_action(2)
+                }}>Comprar Pokemon</button>
+                <button className="btn btn-dark btn-sm" onClick={()=> {
+                    this.props.return_pokemon_action(3);
+                }}>Regresar Pokemon</button>
             </div>
         )
     }

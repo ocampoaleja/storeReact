@@ -11,7 +11,7 @@ class CantidadPokemon extends Component {
     }
 }
 
-const mapStateToProps =(state) => {
+const mapStateToProps = (state) => {
     return{
         game_shop: state.game_shop
     }
