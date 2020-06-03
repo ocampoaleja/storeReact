@@ -6,23 +6,23 @@ export const FETCH_POKEMON_FAILURE = "FETCH_POKEMON_FAILURE";
 
 //Actions
 export const fetchPokemonRequest = () => {
-    return(
+    return{
         type: FETCH_POKEMON_REQUEST
-    )
+    }
 }
 
 export const fetchPokemonSucess = (Pokemon) => {
-    return(
-        type: FETCH_POKEMON_SUCCESS,
+    return{
+        type:FETCH_POKEMON_SUCCESS,
         payload:Pokemon
-    )
+    }
 }
 
 export const fetchPokemonFailure = (error) => {
-    return(
+    return{
         type: FETCH_POKEMON_FAILURE,
         payload:error
-    )
+    }
 }
 
 const fetchPokemon = (valor) => {
